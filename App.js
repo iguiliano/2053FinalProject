@@ -1,5 +1,66 @@
 import React from 'react'; 
 import { useState } from 'react';
+import ListOfWords from './ListOfWords';
+
+const [word, setWord] = useState("");
+
+function Hangman({ letter, onPressLetter}) {
+  return (
+    <button className='hangman' onClick={onPressLetter}>
+      {letter}
+    </button>
+  );
+}
+
+// function that picks the word
+function pickWord({words}) {
+  var temp = Math.random() * 10
+  //in parentheses need to pick the word associated with the number
+  word = setWord(item.key.getWord(temp))
+  // selects random word from imported ListOfWords
+}
+
+
+function Game({ }) {
+  const [usedLetters, setUsedLetters] = useState("");
+  const [message, setMessage] = useState("");
+  
+
+  
+  // someone input the letter
+  // check to see if it was alreayd used
+  // if yes --> make them choose another one
+  // if no --> check to see if in word selected
+    // add to used letters
+    // if in word --> fill in
+      // else add to picture
+
+  function handleClick() {
+
+  }
+
+  return (
+    <div>
+      <div className="status">{status}</div>
+      <div className="message">{message}</div>
+      <div className="word-row">
+        <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
+        <Square value={squares[1]} onSquareClick={() => handleClick(1)} />
+        <Square value={squares[2]} onSquareClick={() => handleClick(2)} />
+      </div>
+      <div className="board-row">
+        <Square value={squares[3]} onSquareClick={() => handleClick(3)} />
+        <Square value={squares[4]} onSquareClick={() => handleClick(4)} />
+        <Square value={squares[5]} onSquareClick={() => handleClick(5)} />
+      </div>
+      <div className="board-row">
+        <Square value={squares[6]} onSquareClick={() => handleClick(6)} />
+        <Square value={squares[7]} onSquareClick={() => handleClick(7)} />
+        <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
+      </div>
+    </div>
+  )
+}
 
 function Square({ value, onSquareClick }) {
   return (
@@ -142,6 +203,7 @@ function Board({ xIsNext, squares, onPlay }) {
       setMessage(""); 
     }
 }
+
     
 
     if (xIsNext) {
