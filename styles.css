@@ -1,29 +1,41 @@
+stand {
+    width: 10px;
+    height: 70px;
+    color: black;
+}
+
 head {
     width: 40px;
     height: 40px;
+    color: black;
 }
   
 body {
     width: 10px;
     height: 60px;
+    color: black;
 }
 
 rightArm {
     width: 30px;
     height: 10px;
+    color: black;
 }
 
 leftArm {
     width: 30px;
     height: 10px;
+    color: black;
 }
 
 rightLeg {
     width: 30px;
     height: 10px;
+    color: black;
 }
 
 leftLeg {
     width: 30px;
     height: 10px;
+    color: black;
 }
