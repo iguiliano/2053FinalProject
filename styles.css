@@ -1,3 +1,9 @@
+stand {
+    width: 10px;
+    height: 70px;
+    color: black;
+}
+
 head {
     width: 40px;
     height: 40px;
