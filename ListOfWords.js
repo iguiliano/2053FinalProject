@@ -17,6 +17,7 @@ export default function ListOfWords({ navigation, route }) {
   const [listWords, setListWords] = useState(words)
   
     return (
-    <View> </View>
+    <View> 
+    </View>
   );
 }
