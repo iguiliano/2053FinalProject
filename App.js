@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import ListOfWords from './ListOfWords';
 
-const [word, setWord] = useState("");
+//const [word, setWord] = useState("");
 
 function Hangman({ letter, onPressLetter}) {
   return (
@@ -12,19 +12,15 @@ function Hangman({ letter, onPressLetter}) {
   );
 }
 
-// function that picks the word
-function pickWord({words}) {
-  var temp = Math.random() * 10
-  //in parentheses need to pick the word associated with the number
-  word = setWord(item.key.getWord(temp))
-  // selects random word from imported ListOfWords
-}
+// picks the word
+let word = words.key(Math.random() * 10);
 
 
 function Game({ }) {
   const [usedLetters, setUsedLetters] = useState("");
   const [message, setMessage] = useState("");
   
+  if()
 
   
   // someone input the letter
