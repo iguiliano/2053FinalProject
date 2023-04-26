@@ -16,11 +16,17 @@ function Hangman({ letter, onPressLetter}) {
 let word = words.key(Math.random() * 10);
 
 
+const alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+
+
 function Game({ }) {
   const [usedLetters, setUsedLetters] = useState("");
   const [message, setMessage] = useState("");
+  const [letterIn, setLetter] = useState("");
   
-  if()
+  letterIn = setLetter(letter); // doesnt work
+
+  if(letterIn == )
 
   
   // someone input the letter
